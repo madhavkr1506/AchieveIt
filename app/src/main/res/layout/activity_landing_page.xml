@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/button_register"
+    tools:context=".LandingPage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:cardMaxElevation="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/azure"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/user"
+                android:layout_marginEnd="12dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/image_bg"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="One task at a time. One step closer to done"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/beige"
+            android:padding="16dp"
+            android:layout_marginTop="80dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"/>
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/edittext_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your email"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/edittext_bg"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact: "
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:id="@+id/editContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your contact number"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@drawable/button_register"
+        android:padding="14dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+</LinearLayout>

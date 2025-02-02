@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view"
+        android:title="View"
+        android:icon="@drawable/view"
+        />
+
+    <item
+        android:id="@+id/addDetails"
+        android:title="Insert Item"
+        android:icon="@drawable/insert"
+        />
+
+    <item
+        android:id="@+id/updateDetails"
+        android:title="Update Item"
+        android:icon="@drawable/updated"
+        />
+    <item
+        android:id="@+id/deleteDetails"
+        android:title="Delete Item"
+        android:icon="@drawable/delete"
+        />
+
+
+
+</menu>

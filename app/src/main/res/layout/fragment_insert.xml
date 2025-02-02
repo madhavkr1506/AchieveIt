@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Insert">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:background="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardMaxElevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/logDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Date: "
+                android:textSize="18sp"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="8dp"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_bg"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/logDateEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Date"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="10dp"
+                    android:layout_weight="4"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:clickable="false"/>
+
+                <ImageButton
+                    android:id="@+id/calendarButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp"
+                    app:tint="@color/royal_blue" />
+            </LinearLayout>
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ivory"
+                android:elevation="4dp"/>
+
+            <TextView
+                android:id="@+id/reflectionNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reflection Note: "
+                android:textSize="18sp"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="8dp"
+                android:layout_marginTop="6dp"/>
+
+            <EditText
+                android:id="@+id/reflectionNoteEdit"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Write your thoughts..."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="12dp"
+                android:gravity="top"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
